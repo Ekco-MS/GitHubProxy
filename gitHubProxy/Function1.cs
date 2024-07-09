@@ -61,7 +61,7 @@ namespace Gary.Function
             log.LogInformation("C# HTTP trigger function processed a request.");
             string code = null;
 
-            string keyVaultURL = "https://keyvaultgary.vault.azure.net/";
+            string keyVaultURL = "https://kvgithubrelayproduksouth.vault.azure.net/";
             var kvClient = new SecretClient(new Uri(keyVaultURL), new DefaultAzureCredential());
             log.LogInformation("kvClient = " + kvClient.ToString());
             KeyVaultSecret secret = null;
